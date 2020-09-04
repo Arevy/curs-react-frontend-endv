@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import './App.css';
-// import BootcampListComponent from './components/bootcampsList/bootcampsList';
+import BootcampListComponent from './components/bootcampsList/bootcampsList';
 // import Parent from './components/siblings-interaction/parent';
 import ChildComponent from "./childComponent";
 
@@ -16,6 +16,7 @@ import ChildComponent from "./childComponent";
         console.log('render Parent');
         return (
             <Fragment>
+                <BootcampListComponent/>
                 <button onClick={() => this.setState(state => ({showChild : !state.showChild}))}>
                     Toggle state
                 </button>
